@@ -24,10 +24,15 @@
       <h2 class="text-center"> About our laboratory: </h2>
       <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem velit, lobortis id nunc non, dapibus pretium velit. Cras pretium lectus quis ante pretium lacinia. In suscipit hendrerit semper. Aenean sagittis aliquam finibus. Ut mattis lacus eu leo laoreet efficitur a in ipsum. Donec ornare elit sed convallis porttitor. Maecenas eget libero pretium, rhoncus justo a, ornare neque. Cras aliquet nibh nunc, eu malesuada ante malesuada nec. Pellentesque ut urna vel nisi gravida viverra. Praesent semper tortor in est mollis convallis. Cras vitae lectus est. Sed lacinia, orci vel faucibus sodales, neque elit tempor enim, vel lacinia ipsum ipsum in magna.</p>
       <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-      <p> TODO - Show the jobs here</p>
+      <div>
+        {%for job in jobs %}
+          {%include 'jobitem.html'%}
+        {% endfor %}
+        
+      </div>
         <div class="text-center">
-      <button class="btn btn-primary btn-lg">Contact Us</button>
-          <p class=mt-4>Copyright, 2023</p>
+          <button class="btn btn-primary btn-lg">Contact Us</button>
+          <p class="mt-4 text-center">Copyright, 2023</p>
         </div>
     </div>
     </body>
