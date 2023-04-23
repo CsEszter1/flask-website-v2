@@ -10,6 +10,7 @@
         height: 360px;
         width: 100%;
         object-fit: cover;
+        margin-bottom: 16px;
       }
       p {
         text-align: justify;
@@ -18,11 +19,21 @@
     </style>
   </head>
     <body>
+      {% include 'nav.html' %}
+      <img class="img-fluid" id="banner" src="https://flask-website.esztercsaszar.repl.co/static/banner.jpg">
       <div class=container>
-      <h1 class="text-center mt-2 mb-4">Research Careers</h1>
-      <img class ="img-fluid" id="banner" src="https://flask-website.esztercsaszar.repl.co/static/banner.jpg" >
-      <h2 class="text-center"> About our research projects: </h2>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem velit, lobortis id nunc non, dapibus pretium velit. Cras pretium lectus quis ante pretium lacinia. In suscipit hendrerit semper. Aenean sagittis aliquam finibus. Ut mattis lacus eu leo laoreet efficitur a in ipsum. Donec ornare elit sed convallis porttitor. Maecenas eget libero pretium, rhoncus justo a, ornare neque. Cras aliquet nibh nunc, eu malesuada ante malesuada nec. Pellentesque ut urna vel nisi gravida viverra. Praesent semper tortor in est mollis convallis. Cras vitae lectus est. Sed lacinia, orci vel faucibus sodales, neque elit tempor enim, vel lacinia ipsum ipsum in magna.</p>
+      <h1 class="text-center mt-2 mb-4" style="margin-bottom:20px">Research Institute</h1>
+     
+      <h2 class="text-center" style="margin-bottom:15px"> About our research projects: </h2>
+      <div class="row" style="margin-bottom:30px">
+        <div class="col-md-6">
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem velit, lobortis id nunc non, dapibus pretium velit. Cras pretium lectus quis ante pretium lacinia. In suscipit hendrerit semper. Aenean sagittis aliquam finibus. Ut mattis lacus eu leo laoreet efficitur a in ipsum. Donec ornare elit sed convallis porttitor. Maecenas eget libero pretium, rhoncus justo a, ornare neque. Cras aliquet nibh nunc, eu malesuada ante malesuada nec. Pellentesque ut urna vel nisi gravida viverra. Praesent semper tortor in est mollis convallis. Cras vitae lectus est. Sed lacinia, orci vel faucibus sodales, neque elit tempor enim, vel lacinia ipsum ipsum in magna. Cras pretium lectus quis ante pretium lacinia. In suscipit hendrerit semper.
+      </p>
+        </div>
+        <div class="d-none d-md-block col-md-6">
+        <img src="/static/work.jpg" style="height:320px; border-radius:4px"> 
+        </div>
+      </div>
       <h2 class="text-center mt-2 mb-4">Open Positions</h2>
       <div>
         {%for job in jobs %}
@@ -31,10 +42,11 @@
         
       </div>
         <div class="text-center">
-          <button class="btn btn-primary btn-lg">Contact Us</button>
-          <p class="mt-4 text-center">Copyright, 2023</p>
+          <a class="btn btn-secondary btn-lg" href="mailto:hello@gmail.com">Contact Us</a>
+        
         </div>
     </div>
+      {% include 'footer.html' %}
     </body>
 
 </html>

@@ -7,19 +7,19 @@ JOBS = [
     'id': 1,
     'title': 'Research Assistant',
     'location': 'Frankfurt, Germany',
-    'salary': '1000 euro'
+    'salary': '1000 EUR'
   },
   {
     'id': 2,
     'title': 'Group Leader',
-    'location': 'Oslo, Norway',
+    'location': 'Berlin, Germany',
     
   },
   {
     'id': 3,
     'title': 'Research Fellow',
-    'location': 'Berlin., Germany',
-    'salary': '2100 euro'
+    'location': 'Berlin, Germany',
+    'salary': '2100 EUR'
   }
 ]
 @app.route("/")
