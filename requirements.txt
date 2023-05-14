@@ -1,6 +1,4 @@
 Flask
 gunicorn
 sqlalchemy
-pymysql
-os
-pip
+
