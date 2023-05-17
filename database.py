@@ -1,4 +1,3 @@
-
 from sqlalchemy import create_engine, text
 import os
 
@@ -35,3 +34,7 @@ def load_job_from_db(id):
       return None
     else:
       return rows[0]._asdict()
+  
+
+
+
